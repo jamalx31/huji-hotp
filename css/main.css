@@ -1,0 +1,107 @@
+/* By JamaL Mashal: jamal.mashaal@gmail.com */
+
+body {
+	width:330px;
+	height:130px;
+	text-align: center;
+	background:-webkit-gradient(linear, 0% 0%, 100% 0%, from(#EEE), to(#DDD));
+	font-size:15px;
+	color:#666;
+}
+
+a:link {text-decoration:none;color:black;}    /* unvisited link */
+a:visited {text-decoration:none;color:black;} /* visited link */
+a:hover {text-decoration:underline;}   /* mouse over link */
+a:active {text-decoration:underline;}
+
+input {
+	text-align:center;
+}
+.buttons {
+  outline: none;
+	-moz-box-shadow:inset 0px 1px 0px 0px #575057;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #575057;
+	box-shadow:inset 0px 1px 0px 0px #575057;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	border-radius:9px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:3px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.buttons:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.buttons:active {
+	position:relative;
+	top:1px;
+}
+
+h3 {
+	color:black;
+}
+
+
+#otp {
+	font-size:25px;
+}
+
+
+.ready,.result,#coursesList{
+	display:none;
+}
+
+#coursesList {
+  text-transform:capitalize;
+	margin:auto;
+	width: 310px;
+	padding: 10px;
+	color: #595A5F;
+	background: #FCFCFC;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	
+	border: 1px solid #EEE;
+	-webkit-border-radius: 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+	border-top-left-radius: 8px 8px;
+	border-top-right-radius: 8px 8px;
+	border-bottom-right-radius: 8px 8px;
+	border-bottom-left-radius: 8px 8px;
+}
+
+.footer {
+	text-align:right;
+	bottom:3px;
+	right:5px;
+	font-size:0.8em;
+	position:fixed;
+}
+
+#activationCode {
+	width:6em;
+}
+
+#coursesList {
+  text-align:left;
+  font-size:15px;
+}
+
+li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+

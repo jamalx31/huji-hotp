@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!-- By JamaL Mashal: jamal.mashaal@gmail.com -->
+<html>
+	<head>
+		<title>Welcome</title>
+		<link rel="stylesheet" type="text/css" href="css/welcome.css" />
+		<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="lib/sha1.js"></script>
+    <script type="text/javascript" src="lib/rijndael.js"></script>
+		<script type="text/javascript" src="js/otpGen.js"></script>
+		<script type="text/javascript" src="js/options.js"></script>
+		<script type="text/javascript" src="js/welcome.js"></script>
+		<script type="text/javascript" src="js/handler.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<image id="icon" src="img/icon.png" />
+			<h2>Hotp Generator - Chrome Extension</h2>
+		</div>
+
+    <!-- Content DIV -->
+		<div class="content">
+      
+			<div id="welcomeMessage">
+			  <p>Welcome to my first chrome extension, the <b>HOTP Generator v2.3</b> for huji cs students.
+			  <ul><h4>- What's new here:</h4>
+			    <li>This simple step-by-step guide!</li>
+          <li>Get the courses list to get there directly.</li>
+			    <li>Fixed bugs.</li>
+			  </ul>
+        <ul><h4>- What's Next ? - coming soon</h4>
+          <li>Take advantage of google drive to save your data.</li>
+          <li>Any Suggestion ?</li>
+        </ul>
+			  </p>
+			<div class="center">
+			  <input class="buttons" type="button" id="toGetCode" value="Next" />
+			</div>
+		</div> <!-- End welcomeMessage -->
+
+		<div id="getCode">
+      <h1>1. Get the activation code.</h1>
+			First you've to get your activation code, so <a href="https://h.cs.huji.ac.il/register" target="_blank">Click Here</a> and login
+      with your cs username.<br />
+			Then choose one of these, it doesn't matter which one: <br />
+      <ul>
+      <li>for Apple IOS based devices, iPod, iPad, iPhone, etc (ios)</li>
+      <li>for Android based smart phones (android)</li>
+      </ul>
+      Click <b>next</b>. Now it will ask you to enter a PIN code, pick one and remember it for later use.
+      <br />
+      Click <b>register</b>.
+			<br />
+      
+			<div class="center">
+        <br />
+        <input class="buttons" type="button" id="backWelcomeMessage" value="Back" />
+			  <input class="buttons" type="button" id="toActive" value="Next" />
+			</div>
+
+		</div> <!-- end getCode -->
+
+
+		<div id="active">
+      <h1>2. Activation.</h1>
+      Now you should receive sms which incloud two links, the second one looks like:
+      <ul>      
+      <li>http://cs.huji.ac.il/hotp-register?acode=<u><b>??????</b></u></li>
+      </ul>
+      Or like this:
+      <ul>
+      <li>hotp-register://<u><b>??????</b></u></li>
+      </ul>
+      Enter the 6-digits at the end of the link:
+      <input type="text" id="activationCode"/>
+      <br />
+      
+			<div class="center">
+        <br />
+        <input class="buttons" type="button" id="backToGetCode" value="Back" />
+			  <input class="buttons" type="button" id="toLogin" value="Next" />
+			</div>
+		</div> <!-- end active -->
+
+    <div id="getLogin">
+      <h1>3. Auto-login feature.</h1>
+      - How does it work? <br /> <br />
+      <div class="center">
+      
+      <iframe width="620" height="345"
+        src="http://www.youtube.com/embed/3cbeeii3EbM">
+      </iframe>      
+        
+      </div>
+      <br />
+      <table border="0">
+        <tr>
+          <td><li>Enter your CS login to get it:</li></td>
+          <td><input type="text" id="login"/> (Optional)</td>
+        </tr>
+        <tr>
+          <td><li>Enter your PIN to get your courses list:</li</td>
+          <td><input type="text" id="pin"/> (Optional, needs login field)</td>
+        </tr>
+      </table>
+      <br />
+      <div class="center">
+        <input class="buttons" type="button" id="backToActive" value="Back" />
+			  <input class="buttons" type="button" id="toByebye" value="Next" />
+			</div>
+    </div> <!-- end getLogin -->
+
+    <div id="byebye">
+      <h1>4. Enjoy!</h1>
+      We've done, you still can change any thing by the <a href="options.html" target="_blank">Options Page</a>. I hope it will be useful. And I'll be more than happy to hear from you and get some feedback, stay in touch!
+      
+      <div class="center">
+        <br />
+        <img id="dontStop" width="304" src="img/dont_stop.jpg" />
+      </div>
+    </div> <!-- end byebye -->
+    <span id="welMess"></span>
+		</div> <!-- end content -->
+
+		<div class="footer">
+			By: Jamal Mashal 
+			<br />
+			<br />
+			<a href="http://www.twitter.com/jamalmashal"><image class="contact" src="img/twitter.png" /></a>
+			<a href="mail:jamal.mashaal@gmail.com"><image class="contact" src="img/gmail.png" /></a>
+		</div>  <!-- end footer -->
+	</body>
+</html>
+

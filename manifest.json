@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "HOTP Generator",
+	"version": "3.0.0",
+	"offline_enabled": true,
+	"homepage_url": "http://www.cs.huji.ac.il/~kabten",
+	"description": "This is a hotp generator for HUJI cs students, developed by Jamal Mashal",
+	"icons": { "16": "img/icon_16.png",
+           "48": "img/icon_48.png",
+          "128": "img/icon_128.png" },
+	"permissions": [
+    "tabs","http://*.cs.huji.ac.il/*", "storage"
+  ],
+  "options_page":"options.html",
+	"background": {
+      "page": "background.html"
+	},
+	"browser_action":	{
+		"default_icon": "img/icon_128.png",
+		"default_popup": "otp.html"
+	}
+}

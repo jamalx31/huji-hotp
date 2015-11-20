@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<!-- By JamaL Mashal: jamal.mashaal@gmail.com -->
+<html >
+	<head>
+		<title>OTP Generator</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		
+		<script type="text/javascript" src="lib/rijndael.js"></script>
+		<script type="text/javascript" src="js/otpGen.js"></script>
+		<script type="text/javascript" src="js/options.js"></script>
+		<script type="text/javascript" src="lib/sha1.js"></script>
+		<script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/handler.js"></script>
+	</head>
+	<body>
+		<h3>HOTP Generator</h3>
+		
+		<div class="init">
+			<br />
+			<input type="button" class="buttons" id="openWelcome" value="Activate First"/>
+			
+		</div>
+		
+		<div class="ready">
+			<input type="password" id="pin" /> <br />
+			<input type="checkbox" id="remPin" /> <label for="remPin">Remember PIN</label> <br /> <br />
+			<input type="button" class="buttons" id="generate" value="Generate" />
+      <input type="button" class="buttons" id="help" value="Help"/>
+      <br / > 
+      <br / >
+      <label id="showList">+ Courses List</label>
+      <div id="coursesList"></div>
+		</div>
+
+		<div class="result">
+			<label id="otp"></label>
+			<br />
+			<br />
+			<input type="button" class="buttons" id="regenerate" value="re-Generate" /> 
+		</div>		
+		<br />
+		<div class="footer">
+			By: Jamal Mashal
+		</div>
+	</body>
+</html>
+
